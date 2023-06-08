@@ -264,7 +264,7 @@ body {
     top: 3rem;
     background-color: var(--bs-white);
 }
-@media (max-width:600px) {
+@media (max-width:1024px) {
     .top::after,.bottom::after {
         width: 20px;
         height: 60px;
