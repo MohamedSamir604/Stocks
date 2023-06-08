@@ -96,7 +96,7 @@ body {
 }
 .main-heading {
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: var(--main-font-family-Semibold);
     text-transform: capitalize;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .main-text {
-    font-size: calc(1rem + 2px);
+    font-size: 1قثة;
     line-height: calc(3rem - 10px);
 }
 
@@ -128,7 +128,7 @@ body {
     }
 }
 .logo{
-    max-height: 3rem;
+    max-height: 2.65rem;
 }
 /* Start  navbar */
 .navbar {
