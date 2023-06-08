@@ -90,7 +90,10 @@ body {
     height: 42px;
     padding-inline-start: 1.25rem;
 }
-
+.btn-lg{
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
 .main-heading {
     color: var(--primary-color);
     font-size: 3rem;
@@ -317,7 +320,7 @@ body {
 /* Start footer */
 .footer{
     background-image: url(../images/footer/footer-bg.svg);
-    padding-top: 32.75rem;
+    padding-top: 28rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
