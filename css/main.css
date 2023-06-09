@@ -62,7 +62,7 @@ body {
 
 @media(max-width:400px) {
     html {
-        font-size: 70%;
+        font-size: 90%;
     }
 }
 
@@ -91,8 +91,8 @@ body {
     padding-inline-start: 1.25rem;
 }
 .btn-lg{
-    padding-inline-start: 1.5rem;
-    padding-inline-end: 1.5rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
 }
 .main-heading {
     color: var(--primary-color);
@@ -128,7 +128,7 @@ body {
     }
 }
 .logo{
-    max-height: 2.65rem;
+    max-height: 5.125rem;
 }
 /* Start  navbar */
 .navbar {
@@ -140,7 +140,7 @@ body {
 
 .navbar.scrolled {
     padding-block: 1rem;
-    background-image: url(../images/banner/banner-bg.svg);
+    background-image: url(../images/banner/banner-bg.png);
 }
 
 .navbar .navbar-nav .nav-link {
@@ -205,7 +205,7 @@ body {
     min-height: 100vh;
     position: relative;
     padding-block: 12rem 17rem;
-    background-image: url(../images/banner/banner-bg.svg);
+    background-image: url(../images/banner/banner-bg.png);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -331,11 +331,11 @@ body {
     gap:0.5rem;
 }
 .footer h5.main-text{
-    font-size:1.375rem;
+    font-size:1.125rem;
 }
 .footer .footer-list .footer-link{
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color:var(--link-color)
 }
 .footer-top{
