@@ -330,6 +330,9 @@ body {
     flex-direction: column;
     gap:0.5rem;
 }
+.footer h5.main-text{
+    font-size:1.375rem;
+}
 .footer .footer-list .footer-link{
     text-decoration: none;
     font-size: 1.125rem;
@@ -339,6 +342,9 @@ body {
     padding-bottom:4.5rem;
     padding-top: 4rem;
     border-bottom:2px solid var(--bs-white)
+}
+.footer .logo{
+    max-height: 5.125rem;
 }
 /* End footer */
 .loader-container {
