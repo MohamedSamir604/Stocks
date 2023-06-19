@@ -34,12 +34,14 @@ html {
 body {
     background-image: url(../images/body-bg.svg);
 }
+
 @media(max-width:1560px) {
     html {
         font-size: 88%;
     }
 
 }
+
 @media(max-width:1200px) {
     html {
         font-size: 80%;
@@ -85,21 +87,25 @@ body {
     color: var(--bs-white)
 }
 
-.form-control-lg,.btn-lg {
+.form-control-lg,
+.btn-lg {
     font-size: 1rem;
-    height: 42px;
+    min-height: 42px;
     padding-inline-start: 1.25rem;
 }
-.btn-lg{
+
+.btn-lg {
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
 }
+
 .main-heading {
     color: var(--primary-color);
     font-size: 2.5rem;
     font-family: var(--main-font-family-Semibold);
     text-transform: capitalize;
 }
+
 .secondary-heading {
     color: var(--primary-color);
     font-size: 2rem;
@@ -127,9 +133,11 @@ body {
         max-width: 1500px;
     }
 }
-.logo{
+
+.logo {
     max-height: 5.125rem;
 }
+
 /* Start  navbar */
 .navbar {
     background-size: cover;
@@ -186,13 +194,15 @@ body {
         padding: 1rem;
     }
 }
-@media (min-width: 1600px){
+
+@media (min-width: 1600px) {
     .navbar-expand-xl .navbar-nav {
         flex-direction: row;
         gap: 1.5rem;
     }
 }
-@media (min-width: 1200px){
+
+@media (min-width: 1200px) {
     .navbar-expand-xl .navbar-nav {
         flex-direction: row;
         gap: 1rem;
@@ -237,7 +247,7 @@ body {
 .about-banner {
     background-image: url(../images/about/about-bg.jpg);
     background-position: bottom;
-   
+
 }
 
 .about-banner .top {
@@ -245,13 +255,16 @@ body {
     background-image: url(../images/body-bg.svg);
     position: relative;
 }
-.about-banner .bottom{
+
+.about-banner .bottom {
     padding-block: 3.75rem 3rem;
     background-color: rgb(49 48 48 / 71%);
     background-image: url(../images/body-bg.svg);
     position: relative;
 }
-.top::after,.bottom::after {
+
+.top::after,
+.bottom::after {
     content: "";
     position: absolute;
     left: 0;
@@ -260,12 +273,16 @@ body {
     top: 4rem;
     background-color: var(--primary-color);
 }
+
 .bottom::after {
     top: 3rem;
     background-color: var(--bs-white);
 }
+
 @media (max-width:1024px) {
-    .top::after,.bottom::after {
+
+    .top::after,
+    .bottom::after {
         width: 20px;
         height: 60px;
     }
@@ -273,40 +290,46 @@ body {
 
 /* End about */
 /* Start why-us*/
-.why-us{
-  position: relative;
-  padding-block: 3.75rem 3rem;
+.why-us {
+    position: relative;
+    padding-block: 3.75rem 3rem;
 }
-.why-us.top::after{
+
+.why-us.top::after {
     top: 3rem;
 }
+
 /* End why-us*/
 /* Start our-founder */
-.our-founder{
+.our-founder {
     background-image: url(../images/our-founder/founder-bg.png);
     position: relative;
 }
-.our-founder.top::after{
+
+.our-founder.top::after {
     background-color: var(--bs-white);
     z-index: 1;
-    top:2.8rem;
+    top: 2.8rem;
 }
-.our-founder::before{
-  content: "";
-  position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height:100%;
-  z-index: 0;
-  background-image: url(../images/body-bg.svg);
+
+.our-founder::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url(../images/body-bg.svg);
 }
-.our-founder .content{
+
+.our-founder .content {
     position: relative;
     z-index: 1;
     padding-block: 3rem 2rem;
 }
-.our-founder .founder-image{
+
+.our-founder .founder-image {
     position: absolute;
     z-index: 1;
     height: 100%;
@@ -316,36 +339,131 @@ body {
     right: 0;
     width: 100%;
 }
+
 /* End our-founder */
+/* Start conatct-us */
+body.contact-us {
+    background-image: url(../images/contatct/contact-us-backgroind.png);
+    background-size: cover;
+}
+
+body.contact-us .navbar {
+    background-image: url(../images/banner/banner-bg.png);
+}
+
+body.contact-us .contact {
+    padding-block: 16.5rem 4rem;
+}
+
+body.contact-us .contact .top::after {
+    top: 14.5rem
+}
+
+body.contact-us .contact .form-card {
+    background-color: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(14px) brightness(0.7);
+    border-radius: 2rem;
+    background-image: url(../images/contatct/pattern.svg);
+    box-shadow: 0 3px 26px rgba(0,0,0,0.16);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+body.contact-us .contact  .form-card .end,
+body.contact-us .contact .form-card .start {
+    padding-block: 4.5rem 3rem;
+}
+body.contact-us .contact .form-card .form-control-lg{
+    box-shadow: 0 3px 9px rgba(0,0,0,0.16);
+    border-radius: calc(1rem - 2px);
+    font-size: calc(1rem - 2px);
+}
+body.contact-us .contact .form-card .btn-main{
+    box-shadow: 0 3px 8px rgba(0,0,0,0.16);
+    padding-inline: 3rem;
+}
+body.contact-us .contact .form-card .form-control-lg:not(:last-child) {
+    min-height: 54px;
+    margin-bottom: 2rem;
+   
+}
+body.contact-us .contact  .form-card .end{
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100%;
+    border-radius: 0 2rem 2rem 0;
+    position: relative;
+}
+body.contact-us .contact  .form-card .end .group .main-text:last-child{
+    font-size: calc(1rem + 1px);
+}
+body.contact-us .contact  .form-card .end .icon-circle{
+    width: 108px;
+    height: 108px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -4rem;
+    right: -2rem;
+}
+body.contact-us .contact  .form-card .end::after{
+    content: "";
+    width: 12px;
+    height: calc(100% - 7rem);
+    position: absolute;
+    left:-6px;
+    background-color:var(--primary-color) ;
+    top:50%;
+    transform: translateY(-50%);
+}
+@media(max-width:992px){
+    body.contact-us .contact  .form-card .end{
+        border-radius:0 0 2rem  2rem;
+    }
+    body.contact-us .contact  .form-card .end .icon-circle{
+        top: 1rem;
+        right: 1rem;
+    }
+}
+/* End conatct-us */
 /* Start footer */
-.footer{
+.footer {
     background-image: url(../images/footer/footer-bg.svg);
     padding-top: 28rem;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.footer .footer-list{
+
+.footer .footer-list {
     display: flex;
     flex-direction: column;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
-.footer h5.main-text{
-    font-size:1.125rem;
+
+.footer h5.main-text {
+    font-size: 1.125rem;
 }
-.footer .footer-list .footer-link{
+
+.footer .footer-list .footer-link {
     text-decoration: none;
     font-size: 1rem;
-    color:var(--link-color)
+    color: var(--link-color)
 }
-.footer-top{
-    padding-bottom:4.5rem;
+
+.footer-top {
+    padding-bottom: 4.5rem;
     padding-top: 4rem;
-    border-bottom:2px solid var(--bs-white)
+    border-bottom: 2px solid var(--bs-white)
 }
-.footer .logo{
+
+.footer .logo {
     max-height: 5.125rem;
 }
+
 /* End footer */
 .loader-container {
     position: fixed;
